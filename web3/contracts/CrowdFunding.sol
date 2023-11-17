@@ -64,7 +64,7 @@ contract CrowdFunding {
     }
 
 
-    //A function to return all campaingnss
+    //A function to return all campaingns
     function getCampaigns() public view returns(Campaign[] memory) {
         Campaign[] memory allCampaigns = new Campaign[](numberOfCampaigns);
 
