@@ -75,7 +75,7 @@ const Navbar = () => {
           <ul className="mb-4">
             {navlinks.map((link) => (
               <li
-                key={Link.name}
+                key={link.name}
                 className={`flex p-4 ${
                   isActive === Link.name && "bg-[#3a3a43]"
                 }`}
