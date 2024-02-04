@@ -45,7 +45,7 @@ const CreateCampaign = () => {
       }
     });
 
-    console.log(form);
+    // console.log(form);
   };
 
   return (
