@@ -7,7 +7,7 @@ import { CustomButton, CountBox } from "../components";
 import { calculateBarPercentage, daysLeft } from "../utils";
 import { thirdweb } from "../assets";
 
-const CampaignDetails = () => {
+const CampaignDetails = ({ amountCollected }) => {
   const { state } = useLocation();
   const { donate, getDonations, contract, address } = useStateContext();
 
@@ -66,6 +66,7 @@ const CampaignDetails = () => {
           />
           <CountBox title="Total Backers" value={donators.length} />
         </div>
+        {/* console.log({state}) */}
       </div>
       <div className="mt-[60px] flex lg:flex-row flex-col gap-5">
         <div className="flex-[2] flex flex-col gap-[40px]">
