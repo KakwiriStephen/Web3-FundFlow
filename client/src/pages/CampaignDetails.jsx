@@ -66,7 +66,7 @@ const CampaignDetails = () => {
           />
           <CountBox title="Total Backers" value={donators.length} />
         </div>
-        {/* console.log({state}) */}
+        {/* console.log({state.amountCollected}) */}
       </div>
       <div className="mt-[60px] flex lg:flex-row flex-col gap-5">
         <div className="flex-[2] flex flex-col gap-[40px]">
