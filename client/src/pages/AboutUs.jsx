@@ -1,8 +1,14 @@
 import React from "react";
 import { thirdweb } from "../assets";
+import { useNavigate } from "react-router-dom";
 import { CustomButton } from "../components";
 
 const AboutUs = () => {
+  const navigate = useNavigate();
+
+  const handleJoinClick = () => {
+    navigate("/");
+  };
   return (
     <div className="bg-[#13131a] min-h-screen flex flex-col items-center justify-center">
       <div className="max-w-4xl mx-auto p-8 rounded-lg">
@@ -41,7 +47,7 @@ const AboutUs = () => {
               btnType="button"
               title="Join Us"
               styles="w-full bg-[#8c6dfd]"
-              handleClick={() => console.log("Join Us button clicked")}
+              handleClick={handleJoinClick}
             />
           </div>
         </div>
